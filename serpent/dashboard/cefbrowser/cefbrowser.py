@@ -300,7 +300,7 @@ class CEFBrowser(Widget, FocusBehavior):
             self._browser.NotifyScreenInfoChanged()
         try:
             self._keyboard_update(**self.__keyboard_state)
-        except:
+        except Exception:
             pass
 
     def _on_parent(self, obj, parent):
